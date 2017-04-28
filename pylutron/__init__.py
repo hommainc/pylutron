@@ -33,7 +33,7 @@ class LutronConnection(threading.Thread):
   """Encapsulates the connection to the Lutron controller."""
   USER_PROMPT = b'login: '
   PW_PROMPT = b'password: '
-  PROMPT = b'GNET> '
+  PROMPT = b'QNET> '
 
   def __init__(self, host, user, password, recv_callback):
     """Initializes the lutron connection, doesn't actually connect."""
